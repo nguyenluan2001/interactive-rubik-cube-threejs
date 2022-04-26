@@ -161,8 +161,8 @@ export default class RubiksCube {
     } else if (event.key === 'a') {
       this.displayKey(event.key);
       // const axis = new THREE.Vector3(0, -1, 0);
-      const axis = this.axisList[2].vector
-      this.historyMoves.push(this.axisList[2])
+      const axis = this.axisList[3].vector
+      this.historyMoves.push(this.axisList[3])
       this.cubes.forEach((cube) => {
         if (this.cubeInSameY(cube, this.selectedCube))
           this.rotateAroundWorldAxis(cube.cubeGroup, axis);
@@ -179,8 +179,8 @@ export default class RubiksCube {
     } else if (event.key === 'd') {
       this.displayKey(event.key);
       // const axis = new THREE.Vector3(0, 1, 0);
-      const axis = this.axisList[3].vector
-      this.historyMoves.push(this.axisList[3])
+      const axis = this.axisList[2].vector
+      this.historyMoves.push(this.axisList[2])
       this.cubes.forEach((cube) => {
         if (this.cubeInSameY(cube, this.selectedCube))
           this.rotateAroundWorldAxis(cube.cubeGroup, axis);
